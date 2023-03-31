@@ -1,76 +1,110 @@
-.flex-item {
-    width: 100px;
-    height: 100px;
-    border-radius: 4px;
+* {
+    font-family: Arial;
+}
+
+body {
+    margin: 0;
+}
+
+.header {
+    width: 100%;
+    background-color: black;
+    border-bottom: solid 3px #32a7b1;
+
+}
+
+.header h1 {
+    color: #32a7b1;
+}
+
+.container {
     display: flex;
-    align-items: center;
-}
-
-.base {
-    margin-bottom: 15px;
-    background-color: #d0d3d4;
-    border-radius: 4px;
-}
-
-.box1 {
-    background-color: #63b1bc;
-}
-
-.box2 {
-    background-color: #1f2a44;
-}
-
-.box3 {
-    background-color: #ed145b;
-}
-
-.box4 {
-    background-color: #efb661;
-}
-
-h1 {
-    width: fit-content;
+    width: 80%;
     margin: auto;
 }
 
-/* Insira o código abaixo */
-
-.container1 {
-    display: flex;
-    justify-content: flex-start;
-    align-content: flex-start;
-    height: 100%;
+.header .container {
+    justify-content: space-between;
+    align-items: center;
 }
 
-.container2 {
-    display: flex;
-    justify-content: flex-end;
-    align-content: flex-end;
-    height: 100%;
-}
-
-.container3 {
-    display: flex;
-   justify-content: center;
-   align-content: center;
-   height: 100%;
-}
-
-.container4 {
+.navBar {
+    color: #b58d5b;
+    list-style: none;
+    width: 300px;
     display: flex;
     justify-content: space-around;
-    align-content: space-around;
+}
+
+.navBar li:hover {
+    letter-spacing: 2px;
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+/*fim do header*/
+.banner {
+    width: 100%;
+    height: 450px;
+    background-image: url(img/bg-jelly-fish-para_outras_pags.png);
+}
+
+.banner .container {
+    justify-content: center;
+    align-items: center;
     height: 100%;
 }
-.container5 {
-    display: flex;
- justify-content: space-between;   
- align-content: space-between;
- height: 100%;
+
+.banner .container p {
+    font-size: 40px;
+    color: white;
+    width: 300px;
 }
-.container6 {
+
+p span {
+    font-weight: 700;        /*deixar a palavra dentro dos spans com largura diferente*/
+}
+
+/*fim do banner*/
+/*começo  do social*/
+
+.social {
+    width: 100%;
+    background-color: #cdcdcd;
+}
+
+.container img {
+    width: 150px;
+    height: 150px;
+}
+
+.social .container {
+    justify-content: space-evenly; /*alinhar o espaço igualmente*/
+padding: 20px 5px;
+}
+
+.card {
     display: flex;
-    justify-content: space-evenly;
-    align-content: space-evenly;
-    height: 100%;
+    flex-direction: column; /*direcionar a orientação (coluna)*/
+    align-items: center;
+    text-align: center;
+    
+}
+
+.card h1 {
+color: #d62e71;
+}
+
+/*começo do footer*/
+
+.footer {
+    width: 100%;
+    background-color: #32a7b1;
+    color: white;
+}
+
+.footer .container {
+    justify-content: center;
+    height: 150px;
+    align-items: center;
 }
